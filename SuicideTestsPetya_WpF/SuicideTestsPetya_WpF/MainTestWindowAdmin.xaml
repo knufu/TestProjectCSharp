@@ -1,0 +1,17 @@
+﻿<Window x:Class="SuicideTestsPetya_WpF.MainTestWindowAdmin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SuicideTestsPetya_WpF"
+        mc:Ignorable="d"
+        Title="MainTestWindow" Height="250" Width="250" Background="#FFA5EC3F">
+    <Grid Height="196" Background="#FFC0FFB2">
+        <Button Content="Пройти тест" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="147" Height="28" Click="Button_Click_1"/>
+        <Button x:Name="LeaderBoardBtn" Content="Таблица лидеров" HorizontalAlignment="Left" Margin="10,43,0,0" VerticalAlignment="Top" Width="147" Height="28" Click="Button_Click"/>
+        <Button Content="Добавить вопрос" HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top" Width="147" Height="28" Click="Button_Click_2"/>
+        <Button x:Name="LeaderBoardBtn_Copy" Content="Удалить вопрос" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" Width="147" Height="28" Click="LeaderBoardBtn_Copy_Click"/>
+        <Button Content="Справка" HorizontalAlignment="Left" Margin="157,166,0,0" VerticalAlignment="Top" Click="Button_Click_3"/>
+
+    </Grid>
+</Window>

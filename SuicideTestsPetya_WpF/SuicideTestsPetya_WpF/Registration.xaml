@@ -1,0 +1,18 @@
+﻿<Window x:Class="SuicideTestsPetya_WpF.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SuicideTestsPetya_WpF"
+        mc:Ignorable="d"
+        Title="Registration" Height="205" Width="160" ResizeMode="NoResize" SizeToContent="Manual">
+    <Grid Background="#FF2E64C3">
+        <Button x:Name="Registration1" Content="Регистрация" HorizontalAlignment="Center" Margin="0,143,0,0" VerticalAlignment="Top" Width="135" Click="Registration1_Click"/>
+        <TextBox x:Name="NameBox" HorizontalAlignment="Center" Margin="0,26,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="135"/>
+        <TextBox x:Name="LoginBox" HorizontalAlignment="Center" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Margin="0,69,0,0"/>
+        <Label Content="Имя:" HorizontalAlignment="Left" Margin="5,2,0,0" VerticalAlignment="Top"/>
+        <Label Content="Логин:" HorizontalAlignment="Left" Margin="5,44,0,0" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Center" Margin="0,113,0,0" VerticalAlignment="Top" Width="135"/>
+        <Label  Content="Пароль:" HorizontalAlignment="Left" Margin="4,87,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

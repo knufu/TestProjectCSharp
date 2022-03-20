@@ -1,0 +1,50 @@
+﻿<Window x:Class="SuicideTestsPetya_WpF.AddTest"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SuicideTestsPetya_WpF"
+        mc:Ignorable="d"
+        Title="AddTest" Height="349" Width="402">
+    <Grid Height="320" Background="#FFF7DEDE">
+        <Button Content="Добавить тест" HorizontalAlignment="Left" Margin="298,273,0,0" VerticalAlignment="Top" Width="84" Height="26" Click="Button_Click"/>
+        <ComboBox x:Name="AnswerCount" HorizontalAlignment="Left" Margin="84,273,0,0" VerticalAlignment="Top" Width="41" Height="26" SelectionChanged="AnswerCount_SelectionChanged">
+            <ComboBoxItem IsSelected="True">
+                <TextBlock>2</TextBlock>
+            </ComboBoxItem>
+            <ComboBoxItem >
+                <TextBlock>3</TextBlock>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <TextBlock>4</TextBlock>
+            </ComboBoxItem>
+        </ComboBox>
+        <TextBox x:Name="QuestText" HorizontalAlignment="Left" Margin="10,21,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="372" Height="52"/>
+        <TextBox x:Name="A1" HorizontalAlignment="Left" Margin="10,97,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" Height="68"/>
+        <TextBox x:Name="A2" HorizontalAlignment="Left" Margin="212,97,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" Height="68"/>
+        <TextBox x:Name="A3" HorizontalAlignment="Left" Margin="10,191,0,0" IsEnabled="False"  Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" Height="68"/>
+        <TextBox x:Name="A4" HorizontalAlignment="Left" Margin="212,191,0,0" IsEnabled="False" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" Height="68"/>
+        <Label Content="Вопрос:" HorizontalAlignment="Left" Margin="10,-5,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ответ 1:" HorizontalAlignment="Left" Margin="12,73,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ответ 2:" HorizontalAlignment="Left" Margin="212,73,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ответ 3:" HorizontalAlignment="Left" Margin="13,165,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ответ 4:" HorizontalAlignment="Left" Margin="212,165,0,0" VerticalAlignment="Top"/>
+        <Label Content="Вопросов:" HorizontalAlignment="Left" Margin="13,273,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="CorrectA" HorizontalAlignment="Left" Margin="253,273,0,0" VerticalAlignment="Top" Width="40" Height="26">
+            <ComboBoxItem IsSelected="True">
+                <TextBlock><Run Text="1"/></TextBlock>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <TextBlock><Run Text="2"/></TextBlock>
+            </ComboBoxItem>
+            <ComboBoxItem >
+                <TextBlock><Run Text="3"/></TextBlock>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <TextBlock><Run Text="4"/></TextBlock>
+            </ComboBoxItem>
+        </ComboBox>
+        <Label Content="Ответов:" HorizontalAlignment="Left" Margin="13,273,0,0" VerticalAlignment="Top"/>
+        <Label Content="Правильный ответ:" HorizontalAlignment="Left" Margin="138,273,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
